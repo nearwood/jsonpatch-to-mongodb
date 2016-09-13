@@ -1,4 +1,5 @@
 var toDot = require('jsonpath-to-dot');
+var iso8601 = require('iso8601');
 
 module.exports = function(patches){
   var update = {};
@@ -6,7 +7,7 @@ module.exports = function(patches){
   patches.map(function(p){
     if(p.op === 'add' || p.op === 'replace'){
       if(!update.$set) update.$set = {};
-      update.$set[toDot(p.path)] = p.value;
+      update.$set[toDot(p.path)] = iso8601(p.value);
     }
     else if(p.op === 'remove'){
 

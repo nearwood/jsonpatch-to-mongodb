@@ -1,6 +1,6 @@
 {
   "name": "jsonpatch-to-mongodb",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Convert JSON patches into a MongoDB update",
   "author": "Lucas Hrabovsky <hrabovsky.lucas@gmail.com> (http://imlucas.com)",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "test": "mocha"
   },
   "dependencies": {
+    "is8601": "git+https://github.com/nearwood/iso8601.git",
     "jsonpath-to-dot": "~0.2.0"
   },
   "devDependencies": {
