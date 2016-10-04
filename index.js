@@ -1,5 +1,5 @@
 var toDot = require('jsonpath-to-dot');
-var iso8601 = require('iso8601');
+var iso8601 = require('@nearwood/iso8601');
 
 module.exports = function(patches){
   var update = {};
