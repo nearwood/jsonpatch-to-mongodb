@@ -20,7 +20,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "iso8601": "git+https://github.com/nearwood/iso8601.git",
+    "@nearwood/iso8601": "git+https://github.com/nearwood/iso8601.git",
     "jsonpath-to-dot": "~0.2.0"
   },
   "devDependencies": {
